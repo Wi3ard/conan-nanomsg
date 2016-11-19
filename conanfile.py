@@ -52,6 +52,11 @@ if(MSVC AND CONAN_LINK_RUNTIME)
 endif()
     '''
         replace_in_file("nanomsg/CMakeLists.txt", "#  Platform checks.", conan_magic_lines)
+        
+        conan_magic_lines = '''
+        # cmake_policy (SET CMP0042 NEW)
+        '''
+        replace_in_file("nanomsg/CMakeLists.txt", "cmake_policy (SET CMP0042 NEW)", conan_magic_lines)
 
         cmake = CMake(self.settings)
 
