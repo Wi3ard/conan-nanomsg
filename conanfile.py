@@ -9,7 +9,6 @@ class nanomsgConan(ConanFile):
     url="https://github.com/nanomsg/nanomsg.git"
     generators = "cmake", "txt"
     settings = "os", "compiler", "build_type", "arch"
-    exports = "cmake/*"
     short_paths = True
     options = {"shared": [True, False],
                "enable_doc": [True, False],
@@ -102,7 +101,7 @@ endif()
         self.copy("*.a", dst="lib", src="install/lib")
         self.copy("*.so*", dst="lib", src="install/lib")
         self.copy("*.dylib", dst="lib", src="install/lib")
-        self.copy("*.*", dst="lib/cmake/libssh2", src="install/lib/cmake/libssh2")
+        self.copy("nanocat*", dst="bin", src="install/bin")
         self.copy("*.*", dst="lib/pkgconfig", src="install/lib/pkgconfig")
 
     def package_info(self):
