@@ -118,3 +118,4 @@ endif()
         elif self.settings.os == "Linux":
             self.cpp_info.libs.append('anl')
             self.cpp_info.libs.append('pthread')
+            self.cpp_info.libs.append('rt')
