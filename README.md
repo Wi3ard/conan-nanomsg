@@ -1,5 +1,5 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/gdv7opmg0r2esn80/branch/master?svg=true)](https://ci.appveyor.com/project/Wi3ard/conan-nanomsg/branch/master)
-[![Build Status](https://travis-ci.org/Wi3ard/conan-nanomsg.svg?branch=master)](https://travis-ci.org/Wi3ard/conan-nanomsg)
+[![Build status](https://ci.appveyor.com/api/projects/status/gdv7opmg0r2esn80/branch/release/1.0.0?svg=true)](https://ci.appveyor.com/project/Wi3ard/conan-nanomsg/branch/release/1.0.0)
+[![Build Status](https://travis-ci.org/Wi3ard/conan-nanomsg.svg?branch=release%2F1.0.0)](https://travis-ci.org/Wi3ard/conan-nanomsg)
 
 # conan-nanomsg
 [Conan.io](https://conan.io) package for [nanomsg](https://github.com/nanomsg/nanomsg) library
