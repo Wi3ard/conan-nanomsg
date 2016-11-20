@@ -33,6 +33,9 @@ class nanomsgConan(ConanFile):
         conan_magic_lines = '''#  Platform checks.
 
 # Conan.io config
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
 if(MSVC AND CONAN_LINK_RUNTIME)
   set(flags
     CMAKE_C_FLAGS_DEBUG
